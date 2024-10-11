@@ -2,7 +2,6 @@ def sum_pairs(lst):
     result = 0 # 1 operation
     for i in range(0, len(lst), 2): # 2 operations
         result += lst[i] + lst[i + 1] # 4 operations
-    print(result) # 1 operation
     return result # 1 operation
 
 """
@@ -18,17 +17,15 @@ Analysis
     - 1 (result = 0) 
     - 2 (for loop) 
     - 4 (result += lst[i] + lst[i + 1]) 
-    - 1 (print) 
     - 1 (return)
 -------------------------------------------------------------------------------
 
 #3 Mathematical expression
-- T(n) = 1 + (4 * (n/2)) + 2
-- T(n) = 1 + 2n + 2
+- T(n) = 1 + 2 * (n/2) + 4 + 1
 -------------------------------------------------------------------------------
 
 #4 Simplify expression
-- T(n) = 2n + 3
+- T(n) = 3 (n/2) + 5
 -------------------------------------------------------------------------------
 
 #5 Final result (complexity)
