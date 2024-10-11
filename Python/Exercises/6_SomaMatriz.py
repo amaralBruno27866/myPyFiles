@@ -5,7 +5,6 @@ def sum_matrix(matrix):
         for element in row:
             # print(element)
             result += element
-            print(result)
     return result
 
 """
