@@ -1,8 +1,10 @@
 def solution(numbers):
   if not all(isinstance(x, int) for x in numbers):
     raise ValueError("Input must be a list of integers")
+  
   if len(numbers) < 3 or len(numbers) > 100:
     raise ValueError("Input must be a list of length 3 to 100")
+  
   if not all(1 <= x <= 10**9 for x in numbers):
     raise ValueError("Input must be a list of integers between 1 and 10^9")
   
@@ -18,4 +20,5 @@ def solution(numbers):
     result = 1 if is_zigzag else 0
 
     return[result] + check_zigzag(i+1)
+  
   return check_zigzag(0)
