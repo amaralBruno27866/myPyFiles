@@ -1,5 +1,5 @@
 #include <cstdlib>
-#define THRESHOLD 10
+#define THRESHOLD 32
 
 void quickSort(int arr[],int size){
    quickSort(arr,0,size-1);
