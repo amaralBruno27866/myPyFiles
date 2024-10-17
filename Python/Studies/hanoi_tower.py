@@ -8,5 +8,5 @@ def hanoi_tower(n, origin, destine, auxiliar, count=0):
     return count
   
 # Chamada da função
-total_moves = hanoi_tower(30, "A", "C", "B")
+total_moves = hanoi_tower(10, "A", "C", "B")
 print("Total moves:", total_moves)
